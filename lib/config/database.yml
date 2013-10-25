@@ -1,0 +1,5 @@
+host: 'localhost'
+adapter: 'sqlite3'
+database: 'db/producer_payout.sqlite3'
+encoding: 'utf8'
+pool: 5
