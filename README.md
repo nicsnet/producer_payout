@@ -1,29 +1,29 @@
 # ProducerPayout
 
-TODO: Write a gem description
+calculates the revenue of a given video producer and a time period, based on
+the amount of video views and overall revenue from subscribers
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'producer_payout'
-
-And then execute:
-
     $ bundle
 
-Or install it yourself as:
+Before running tests:
 
-    $ gem install producer_payout
+    $ rake db:migrate
+
+optional:
+
+    $ rake db:seed
+
+tests:
+
+    $ rake
 
 ## Usage
 
-TODO: Write usage instructions here
+ producer = Producer.find_by_name('Steve')
+ period   = Date.new(2013, 8, 1)..Date.new(2013, 8, 31)
 
-## Contributing
+ payout = ProducerPayout::ProducerPayout.new(producer, period)
+ sum = payout.calculate # => 20.28
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
