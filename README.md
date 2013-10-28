@@ -20,10 +20,10 @@ tests:
     $ rake
 
 ## Usage
-
+ ```ruby
  producer = Producer.find_by_name('Steve')
  period   = Date.new(2013, 8, 1)..Date.new(2013, 8, 31)
 
  payout = ProducerPayout::ProducerPayout.new(producer, period)
  sum = payout.calculate # => 20.28
-
+ ```
