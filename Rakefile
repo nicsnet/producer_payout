@@ -5,6 +5,7 @@ require 'rake/testtask'
 require 'sqlite3'
 require 'active_record'
 require 'yaml'
+require 'producer_payout'
 
 Rake::TestTask.new do |t|
   t.libs << 'lib/producer_payout'

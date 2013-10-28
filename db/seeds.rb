@@ -1,20 +1,20 @@
 Subscription.create(
-  user_id: 1, start_date: Date.new(2013, 1, 1),
+  id: 1, user_id: 1, start_date: Date.new(2013, 1, 1),
   end_date: Date.new(2013, 12, 31), price: 179.40
 )
 
 Subscription.create(
-  user_id: 2, start_date: Date.new(2013, 2, 15),
+  id: 2, user_id: 2, start_date: Date.new(2013, 2, 15),
   end_date: Date.new(2013, 8, 14), price: 149.70
 )
 
 Subscription.create(
-  user_id: 3, start_date: Date.new(2013, 6, 23),
+  id: 3, user_id: 3, start_date: Date.new(2013, 6, 23),
   end_date: Date.new(2013, 7, 22), price: 99.95
 )
 
 Subscription.create(
-  user_id: 3, start_date: Date.new(2013, 8, 11),
+  id: 4, user_id: 3, start_date: Date.new(2013, 8, 11),
   end_date: Date.new(2013, 9, 10), price: 99.95
 )
 
@@ -68,20 +68,20 @@ VideoView.create(
   created_at: DateTime.new( 2013, 10, 10, 12)
 )
 Video.create(
-  producer_id: 1,  title: 'Pythagorean theorem - simple explanation'
+  id: 1, producer_id: 1,  title: 'Pythagorean theorem - simple explanation'
 )
 Video.create(
-  producer_id: 1, title: 'Rational functions'
+  id: 2, producer_id: 1, title: 'Rational functions'
 )
 Video.create(
-  producer_id: 2, title: 'What is an integral?'
+  id: 3, producer_id: 2, title: 'What is an integral?'
 )
 Video.create(
-  producer_id: 2, title: 'Sine, cosine, and tangent'
+  id: 4, producer_id: 2, title: 'Sine, cosine, and tangent'
 )
 Video.create(
-  producer_id: 2, title: 'How to solve quadratic equations'
+  id: 5, producer_id: 2, title: 'How to solve quadratic equations'
 )
 
-Producer.create(name: 'Martin')
-Producer.create(name: 'Steve')
+Producer.create(id: 1, name: 'Martin')
+Producer.create(id: 2, name: 'Steve')
